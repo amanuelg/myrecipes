@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '>= 3.2'
+gem 'carrierwave', '0.10.0'
+gem 'mini_magick', '3.8.0'
 
 group :development, :test do
   gem 'byebug'
