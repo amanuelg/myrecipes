@@ -14,15 +14,19 @@
 ActiveRecord::Schema.define(version: 20150925041943) do
 
   create_table "chefs", force: :cascade do |t|
-    t.string "chef_name"
-    t.string "email"
+    t.string   "chef_name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "recipes", force: :cascade do |t|
-    t.string  "name"
-    t.text    "summary"
-    t.text    "description"
-    t.integer "chef_id"
+    t.string   "name"
+    t.text     "summary"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "chef_id"
   end
 
 end
