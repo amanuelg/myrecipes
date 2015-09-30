@@ -1,6 +1,6 @@
 class ChefsController < ApplicationController
 
-before_action :require_same_user[:edit,:update]
+before_action :require_same_user, only: [:edit,:update]
 
 
     def new
