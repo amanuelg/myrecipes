@@ -9,5 +9,5 @@ class Chef < ActiveRecord::Base
     uniqueness:{case_sensitive: false},
     format: {with: VALID_EMAIL_REGX}
     
-    
+    has_secure_password
 end
