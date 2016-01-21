@@ -1,0 +1,11 @@
+<%= render 'shared/page_title', title: "All Styles"%>
+
+<% @styles.each do|style|%>
+    <div class="row">
+        <div class="col-md-2">
+            <section class="chef_info center">
+                <h5>name: <%= style.name %></h5>
+            </section>
+        </div>
+    </div>
+<% end %>

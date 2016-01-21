@@ -21,6 +21,8 @@
         <div class="col-lg-6 well">
             <h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
             <p><%= recipe.summary %></p>
+            <p>Style: <%= render recipe.styles %></p>
+            <p>Ingredient: <%= render recipe.ingredients %></p>
                <span class='quite'><small>Created: <%= time_ago_in_words(recipe.created_at) %>,</small></span>
                <span class='quite'><small>Updated: <%= time_ago_in_words(recipe.updated_at) %></small></span>
             <div class="pull-right">

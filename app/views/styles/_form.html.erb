@@ -1,0 +1,15 @@
+<%= render 'shared/error_messages', obj: @style %>
+<p>
+<div class="row">
+        <div class="col-md-8 col-md-offset-2 well">
+            <%= form_for(@style, html: { multipart: true}) do |f| %>
+            
+            <%= f.label :Name%>
+            <%= f.text_field :name %>
+            
+            <%= f.submit @style.new_record? ? 'Create Style' : 'Edit Style', class: 'btn btn-success'%>
+            <% end %>
+            
+            
+        </div>
+    </div>
